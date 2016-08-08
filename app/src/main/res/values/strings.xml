@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">MyRadioApp</string>
+    <string name="music">MUSIC</string>
+    <string name="news">NEWS</string>
+    <string name="sports">SPORTS</string>
+    <string name="comedy">COMEDY</string>
+    <string name="espn">ESPN Radio</string>
+    <string name="talkSport">Talk Sport Radio</string>
+    <string name="wfan">Wfan Sport Radio</string>
+    <string name="fm181">181.FM Radio</string>
+    <string name="bluegrass">The Bluegrass Mix Radio</string>
+    <string name="radiolovelive">Radio Love Live Radio</string>
+    <string name="bbc">BBC World Service</string>
+    <string name="fox">Fox News Radio</string>
+    <string name="voa">Voice Of America Radio</string>
+    <string name="mainAct">Please select a category.</string>
+    <string name="musicAct">Enjoy the music for free online.</string>
+    <string name="newsAct">Find latest news and current events from around the world.</string>
+    <string name="sportAct">Get scores, news, and listen live sports.</string>
+</resources>

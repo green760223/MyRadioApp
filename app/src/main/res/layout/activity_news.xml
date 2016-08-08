@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.myradioapp.NewsActivity">
+
+    <TextView
+        android:id="@+id/news_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="@string/newsAct"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <View
+        android:id="@+id/news_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/news_description"
+        android:background="@android:color/darker_gray" />
+
+    <RelativeLayout
+        android:id="@+id/bbc_relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/news_line"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/bbc_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_margin="12dp"
+            android:src="@drawable/bbc_image" />
+
+        <TextView
+            android:id="@+id/bbc_textview"
+            style="@style/CategoryStyle"
+            android:layout_toRightOf="@id/bbc_image"
+            android:text="@string/bbc" />
+
+        <ImageView
+            android:id="@+id/bbc_status"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="24dp"
+            android:src="@drawable/play" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/bbc_relative"
+        android:background="@android:color/darker_gray" />
+
+    <RelativeLayout
+        android:id="@+id/fox_relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bbc_relative"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/fox_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_margin="12dp"
+            android:src="@drawable/fox_image" />
+
+        <TextView
+            android:id="@+id/fox_textview"
+            style="@style/CategoryStyle"
+            android:layout_toRightOf="@id/fox_image"
+            android:text="@string/fox" />
+
+        <ImageView
+            android:id="@+id/fox_status"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="24dp"
+            android:src="@drawable/play" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/fox_relative"
+        android:background="@android:color/darker_gray" />
+
+    <RelativeLayout
+        android:id="@+id/voa_relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fox_relative"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/voa_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_margin="12dp"
+            android:src="@drawable/voa_image" />
+
+        <TextView
+            android:id="@+id/voa_textview"
+            style="@style/CategoryStyle"
+            android:layout_toRightOf="@id/voa_image"
+            android:text="@string/voa" />
+
+        <ImageView
+            android:id="@+id/voa_status"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="24dp"
+            android:src="@drawable/play" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/voa_relative"
+        android:background="@android:color/darker_gray" />
+
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:max="100" />
+
+</RelativeLayout>
