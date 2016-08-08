@@ -24,9 +24,6 @@
             android:name=".SportsActivity"
             android:label="@string/sports"/>
         <activity
-            android:name=".ComedyActivity"
-            android:label="@string/comedy"/>
-        <activity
             android:name=".NewsActivity"
             android:label="@string/news"></activity>
     </application>
